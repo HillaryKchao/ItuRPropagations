@@ -8,8 +8,8 @@ export ItuRVersion
 export ItuRPropagation
 
 struct LatLon
-    lat::Real
-    lon::Real
+    lat::Float64
+    lon::Float64
     function LatLon(lat, lon)
         if lat < -90.0 || lat > 90.0
             throw(ErrorException("lat=$lat\nlat (latitude) should be between -90 and 90"))
